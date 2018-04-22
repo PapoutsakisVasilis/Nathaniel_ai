@@ -75,9 +75,11 @@
                                            fr = fr.replace('<p>',' ');
                                            fr = fr.replace('</p>',' ');
                                        }
-    
+                                    
 
                                        speechSynthesis.speak(new SpeechSynthesisUtterance(fr));
+                                   }else{
+                                       speechSynthesis.speak(new SpeechSynthesisUtterance("sorry cant find answers for that question tag."));
                                    }
                                 }
                                 
